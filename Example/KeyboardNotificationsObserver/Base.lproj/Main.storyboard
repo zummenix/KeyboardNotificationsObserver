@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,10 +20,46 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-sU-MVg">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Af5-V8-Kkr">
+                                        <rect key="frame" x="10" y="17" width="355" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95086491110000004" green="0.95555019379999995" blue="0.96051609520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="60O-3J-AUi"/>
+                                    <constraint firstItem="Af5-V8-Kkr" firstAttribute="leading" secondItem="UTf-sU-MVg" secondAttribute="leading" constant="10" id="PeJ-lv-frW"/>
+                                    <constraint firstItem="Af5-V8-Kkr" firstAttribute="centerY" secondItem="UTf-sU-MVg" secondAttribute="centerY" id="RRE-6I-Klg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Af5-V8-Kkr" secondAttribute="trailing" constant="10" id="eoo-sk-Wif"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UTf-sU-MVg" secondAttribute="trailing" id="Bnf-4O-M6z"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UTf-sU-MVg" secondAttribute="bottom" id="ktf-Wx-NAa"/>
+                            <constraint firstItem="UTf-sU-MVg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rRe-fF-Fnw"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hMF-bQ-eN1" appends="YES" id="lK1-GL-I8N"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="ktf-Wx-NAa" id="HqG-f7-MOH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hMF-bQ-eN1">
+                    <connections>
+                        <action selector="tapGestureRecognizerAction:" destination="vXZ-lx-hvc" id="6TG-Ot-UTb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
