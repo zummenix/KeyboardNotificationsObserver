@@ -1,12 +1,12 @@
 PODS:
   - KeyboardNotificationsObserver (0.1.0)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Nimble (8.0.1)
+  - Quick (2.1.0)
 
 DEPENDENCIES:
   - KeyboardNotificationsObserver (from `../`)
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
+  - Nimble (~> 8.0)
+  - Quick (~> 2.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KeyboardNotificationsObserver: f9e328e89c9635c75733ce31bfd3e0de40e558a0
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 9a9cfd3105199ef70d22e88a5af21cee0305d0cb
+PODFILE CHECKSUM: dc3b93ca5fb3d3bddffd7fd0c721f1a36b430e54
 
 COCOAPODS: 1.6.1
