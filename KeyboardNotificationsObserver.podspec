@@ -14,6 +14,7 @@ An observer for `UIKeyboard` notifications that provides a safe and convenient i
   s.source           = { :git => 'https://github.com/zummenix/KeyboardNotificationsObserver.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'KeyboardNotificationsObserver/Classes/**/*'
   s.frameworks = 'UIKit'
