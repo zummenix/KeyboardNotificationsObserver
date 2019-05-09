@@ -1,28 +1,54 @@
 # KeyboardNotificationsObserver
 
-[![CI Status](https://img.shields.io/travis/zummenix/KeyboardNotificationsObserver.svg?style=flat)](https://travis-ci.org/zummenix/KeyboardNotificationsObserver)
-[![Version](https://img.shields.io/cocoapods/v/KeyboardNotificationsObserver.svg?style=flat)](https://cocoapods.org/pods/KeyboardNotificationsObserver)
-[![License](https://img.shields.io/cocoapods/l/KeyboardNotificationsObserver.svg?style=flat)](https://cocoapods.org/pods/KeyboardNotificationsObserver)
-[![Platform](https://img.shields.io/cocoapods/p/KeyboardNotificationsObserver.svg?style=flat)](https://cocoapods.org/pods/KeyboardNotificationsObserver)
+An observer for `UIKeyboard` notifications that provides a safe and convenient interface.
+This is a natural evolution of another my project https://github.com/zummenix/KeyboardWrapper
 
-## Example
+<img src="https://raw.github.com/zummenix/KeyboardWrapper/master/demo.gif" alt="Demo" width="372" height="662"/>
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Usage
 
+- Import module
+```Swift
+import KeyboardNotificationsObserver
+```
+
+- Create `KeyboardNotificationsObserver` instance as a property (for example on a view controller)
+```Swift
+private let keyboardObserver = KeyboardNotificationsObserver()
+```
+
+- Implement necessary callbacks
+```Swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    keyboardObserver.onWillShow = { [weak self] info in
+        // Change a view according to keyboard size.
+    }
+}
+```
 ## Requirements
+
+- **iOS 9.0** or higher
+- **Xcode 10 (swift 5.0)** or higher
+
+## Changes
+
+Take a look at [change log](CHANGELOG.md).
 
 ## Installation
 
-KeyboardNotificationsObserver is available through [CocoaPods](https://cocoapods.org). To install
+### CocoaPods
+
+KeyboardNotificationsObserver is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'KeyboardNotificationsObserver'
 ```
 
-## Author
+### Manual
 
-zummenix, zummenix@gmail.com
+Just drop the `KeyboardNotificationsObserver.swift` file into your project. That's it!
 
 ## License
 
