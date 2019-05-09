@@ -3,7 +3,7 @@
 An observer for `UIKeyboard` notifications that provides a safe and convenient interface.
 This is a natural evolution of another my project https://github.com/zummenix/KeyboardWrapper
 
-<img src="https://raw.github.com/zummenix/KeyboardWrapper/master/demo.gif" alt="Demo" width="372" height="662"/>
+<img src="https://raw.github.com/zummenix/KeyboardNotificationsObserver/master/demo.gif" alt="Demo" width="372" height="662"/>
 
 ## Usage
 
