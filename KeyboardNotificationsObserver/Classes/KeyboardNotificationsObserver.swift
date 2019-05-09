@@ -19,7 +19,7 @@ public class KeyboardNotificationsObserver {
         case didChangeFrame
 
         /// A name of a notification that corresponds to this notification type.
-        var name: Notification.Name {
+        public var name: Notification.Name {
             switch self {
             case .willShow: return UIResponder.keyboardWillShowNotification
             case .didShow: return UIResponder.keyboardDidShowNotification
@@ -31,7 +31,7 @@ public class KeyboardNotificationsObserver {
         }
 
         /// Creates the notification type from a notification name.
-        init?(name: Notification.Name) {
+        public init?(name: Notification.Name) {
             switch name {
             case UIResponder.keyboardWillShowNotification: self = .willShow
             case UIResponder.keyboardDidShowNotification : self = .didShow
@@ -80,7 +80,7 @@ public class KeyboardNotificationsObserver {
         }
 
         /// Creates an instance of `UserInfo` using `userInfo` from a notification object.
-        init(info: [AnyHashable: Any]?, notificationType: NotificationType) {
+        public init(info: [AnyHashable: Any]?, notificationType: NotificationType) {
             self.notificationType = notificationType
             self.beginFrame = (info?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
             self.endFrame = (info?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
