@@ -1,7 +1,9 @@
 # KeyboardNotificationsObserver
 
+[![Build Status](https://travis-ci.org/zummenix/KeyboardNotificationsObserver.svg?branch=master)](https://travis-ci.org/zummenix/KeyboardNotificationsObserver)
+[![Cocoapod](https://img.shields.io/cocoapods/v/KeyboardNotificationsObserver.svg)](https://cocoapods.org/pods/KeyboardNotificationsObserver)
+
 An observer for `UIKeyboard` notifications that provides a safe and convenient interface.
-This is a natural evolution of another my project https://github.com/zummenix/KeyboardWrapper
 
 <img src="https://raw.github.com/zummenix/KeyboardNotificationsObserver/master/demo.gif" alt="Demo" width="372" height="662"/>
 
