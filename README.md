@@ -28,6 +28,10 @@ override func viewDidLoad() {
     }
 }
 ```
+
+All six UIKeyboard notifications are implemented. You can use the following callbacks:
+`onWillShow`, `onDidShow`, `onWillHide`, `onDidHide`, `onWillChangeFrame`, `onDidChangeFrame`
+
 ## Requirements
 
 - **iOS 9.0** or higher
