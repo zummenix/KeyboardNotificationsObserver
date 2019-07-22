@@ -33,6 +33,12 @@ class Spec: QuickSpec {
                 let userInfo = KeyboardNotificationsObserver.UserInfo(info: info, notificationType: .willShow)
                 expect(userInfo.animationOptions.rawValue) == 458752
             }
+
+            it("can decode is local flag") {
+                let info = [UIResponder.keyboardIsLocalUserInfoKey: true]
+                let userInfo = KeyboardNotificationsObserver.UserInfo(info: info, notificationType: .willShow)
+                expect(userInfo.isLocal) == true
+            }
         }
 
         describe("Observing Notifications") {
