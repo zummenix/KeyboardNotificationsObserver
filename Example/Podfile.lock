@@ -1,5 +1,5 @@
 PODS:
-  - KeyboardNotificationsObserver (0.1.0)
+  - KeyboardNotificationsObserver (0.2.0)
   - Nimble (8.0.1)
   - Quick (2.1.0)
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KeyboardNotificationsObserver: f9e328e89c9635c75733ce31bfd3e0de40e558a0
+  KeyboardNotificationsObserver: 551a9a508057697dfc3de39f1ec3e55b9c71eff9
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
 PODFILE CHECKSUM: dc3b93ca5fb3d3bddffd7fd0c721f1a36b430e54
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.4
