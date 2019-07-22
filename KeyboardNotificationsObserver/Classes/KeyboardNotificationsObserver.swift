@@ -67,6 +67,10 @@ public class KeyboardNotificationsObserver {
         /// Corresponds to `UIKeyboardAnimationDurationUserInfoKey`.
         public let animationDuration: TimeInterval
 
+        /// Shows whether the keyboard belongs to the current app.
+        /// Corresponds to `UIKeyboardIsLocalUserInfoKey`.
+        public let isLocal: Bool
+
         /// Options for animating constructed from `animationCurve` property.
         public var animationOptions: UIView.AnimationOptions {
             return UIView.AnimationOptions(rawValue: UInt(animationCurve.rawValue << 16))
@@ -79,6 +83,7 @@ public class KeyboardNotificationsObserver {
             self.endFrame = (info?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
             self.animationCurve = UIView.AnimationCurve(rawValue: info?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int ?? 0) ?? .easeInOut
             self.animationDuration = TimeInterval(info?[UIResponder.keyboardAnimationDurationUserInfoKey] as? CGFloat ?? 0.0)
+            self.isLocal = info?[UIResponder.keyboardIsLocalUserInfoKey] as? Bool ?? false
         }
     }
 
