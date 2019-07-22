@@ -27,6 +27,12 @@ class Spec: QuickSpec {
                 }
                 expect(options) == [.curveEaseInOut, .curveEaseIn, .curveEaseOut, .curveLinear]
             }
+
+            it("can decode animation options with raw value 7 for the animation curve") {
+                let info = [UIResponder.keyboardAnimationCurveUserInfoKey: 7]
+                let userInfo = KeyboardNotificationsObserver.UserInfo(info: info, notificationType: .willShow)
+                expect(userInfo.animationOptions.rawValue) == 458752
+            }
         }
 
         describe("Observing Notifications") {

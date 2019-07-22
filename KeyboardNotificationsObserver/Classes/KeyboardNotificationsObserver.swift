@@ -69,14 +69,7 @@ public class KeyboardNotificationsObserver {
 
         /// Options for animating constructed from `animationCurve` property.
         public var animationOptions: UIView.AnimationOptions {
-            switch animationCurve {
-            case .easeInOut: return UIView.AnimationOptions.curveEaseInOut
-            case .easeIn: return UIView.AnimationOptions.curveEaseIn
-            case .easeOut: return UIView.AnimationOptions.curveEaseOut
-            case .linear: return UIView.AnimationOptions.curveLinear
-            @unknown default:
-                fatalError("Not all values of the animationCurve are handled in the switch statement")
-            }
+            return UIView.AnimationOptions(rawValue: UInt(animationCurve.rawValue << 16))
         }
 
         /// Creates an instance of `UserInfo` using `userInfo` from a notification object.
