@@ -2,6 +2,7 @@
 
 import Quick
 import Nimble
+import UIKit
 @testable import KeyboardNotificationsObserver
 
 class Spec: QuickSpec {

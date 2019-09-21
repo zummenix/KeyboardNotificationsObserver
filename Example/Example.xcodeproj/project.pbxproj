@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1CC9562336A451004C9945 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1CC9552336A451004C9945 /* Nimble */; };
+		4D1CC9592336A4D0004C9945 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1CC9582336A4D0004C9945 /* Quick */; };
 		4DE9F17C2336847E00E70E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9F17B2336847E00E70E56 /* AppDelegate.swift */; };
 		4DE9F1802336847E00E70E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9F17F2336847E00E70E56 /* ViewController.swift */; };
 		4DE9F1832336847E00E70E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9F1812336847E00E70E56 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1CC9592336A4D0004C9945 /* Quick in Frameworks */,
+				4D1CC9562336A451004C9945 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +126,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4D1CC94923369FDC004C9945 /* PBXTargetDependency */,
 			);
 			name = Example;
 			packageProductDependencies = (
@@ -146,6 +151,8 @@
 			);
 			name = ExampleTests;
 			packageProductDependencies = (
+				4D1CC9552336A451004C9945 /* Nimble */,
+				4D1CC9582336A4D0004C9945 /* Quick */,
 			);
 			productName = ExampleTests;
 			productReference = 4DE9F1972336863200E70E56 /* ExampleTests.xctest */;
@@ -180,8 +187,8 @@
 			);
 			mainGroup = 4DE9F16F2336847E00E70E56;
 			packageReferences = (
-				4DE9F1A7233689BA00E70E56 /* XCRemoteSwiftPackageReference "Quick" */,
-				4DE9F1AA233689DA00E70E56 /* XCRemoteSwiftPackageReference "Nimble" */,
+				4D1CC9542336A451004C9945 /* XCRemoteSwiftPackageReference "Nimble" */,
+				4D1CC9572336A4D0004C9945 /* XCRemoteSwiftPackageReference "Quick" */,
 			);
 			productRefGroup = 4DE9F1792336847E00E70E56 /* Products */;
 			projectDirPath = "";
@@ -234,6 +241,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D1CC94923369FDC004C9945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4D1CC94823369FDC004C9945 /* KeyboardNotificationsObserver */;
+		};
 		4DE9F19D2336863200E70E56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DE9F1772336847E00E70E56 /* Example */;
@@ -480,7 +491,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4DE9F1A7233689BA00E70E56 /* XCRemoteSwiftPackageReference "Quick" */ = {
+		4D1CC9542336A451004C9945 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = exactVersion;
+				version = 8.0.2;
+			};
+		};
+		4D1CC9572336A4D0004C9945 /* XCRemoteSwiftPackageReference "Quick" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Quick";
 			requirement = {
@@ -488,17 +507,23 @@
 				minimumVersion = 2.2.0;
 			};
 		};
-		4DE9F1AA233689DA00E70E56 /* XCRemoteSwiftPackageReference "Nimble" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Nimble";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D1CC94823369FDC004C9945 /* KeyboardNotificationsObserver */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeyboardNotificationsObserver;
+		};
+		4D1CC9552336A451004C9945 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D1CC9542336A451004C9945 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		4D1CC9582336A4D0004C9945 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D1CC9572336A4D0004C9945 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
 		4DE9F1912336854E00E70E56 /* KeyboardNotificationsObserver */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KeyboardNotificationsObserver;
