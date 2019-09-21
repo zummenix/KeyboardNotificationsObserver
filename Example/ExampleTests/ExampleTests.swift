@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import KeyboardNotificationsObserver
+@testable import KeyboardNotificationsObserver
 
 class Spec: QuickSpec {
     override func spec() {
