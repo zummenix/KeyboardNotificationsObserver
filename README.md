@@ -1,7 +1,6 @@
 # KeyboardNotificationsObserver
 
 [![Build Status](https://travis-ci.com/zummenix/KeyboardNotificationsObserver.svg?branch=master)](https://travis-ci.com/zummenix/KeyboardNotificationsObserver)
-[![Cocoapod](https://img.shields.io/cocoapods/v/KeyboardNotificationsObserver.svg)](https://cocoapods.org/pods/KeyboardNotificationsObserver)
 
 An observer for `UIKeyboard` notifications that provides a safe and convenient interface.
 
@@ -35,7 +34,7 @@ All six UIKeyboard notifications are implemented. You can use the following call
 ## Requirements
 
 - **iOS 9.0** or higher
-- **Xcode 10 (swift 5.0)** or higher
+- **Xcode 11 (swift 5.0)** or higher
 
 ## Changes
 
@@ -43,14 +42,9 @@ Take a look at [change log](CHANGELOG.md).
 
 ## Installation
 
-### CocoaPods
+### SwiftPM
 
-KeyboardNotificationsObserver is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'KeyboardNotificationsObserver'
-```
+Use Swift Package Manager integration in Xcode to add this dependency.
 
 ### Manual
 

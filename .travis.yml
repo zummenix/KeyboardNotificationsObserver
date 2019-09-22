@@ -1,10 +1,6 @@
-osx_image: xcode10.2
-language: objective-c
-cache: cocoapods
-podfile: Example/Podfile
-before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=Example
-script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/KeyboardNotificationsObserver.xcworkspace -scheme KeyboardNotificationsObserver-Example -sdk iphonesimulator12.2 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone Xs,OS=12.2' | xcpretty
-# - pod lib lint
+osx_image: xcode11
+language: swift
+xcode_project: Example/Example.xcodeproj
+xcode_scheme: Example
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11 Pro
+
